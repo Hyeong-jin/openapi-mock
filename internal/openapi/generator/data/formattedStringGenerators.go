@@ -10,12 +10,13 @@ import (
 	"syreclabs.com/go/faker/locales"
 )
 
-// Locale holds the default locale.
-var Locale = locales.Ko
-
 type stringGeneratorFunction func(minLength int, maxLength int) string
 
 func defaultFormattedStringGenerators(generator *rangedTextGenerator) map[string]stringGeneratorFunction {
+
+	// Default Locale is English
+	faker.Locale = locales.Ko
+
 	base64 := &base64Generator{generator: generator}
 	html := &htmlGenerator{random: generator.random}
 

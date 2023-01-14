@@ -1006,19 +1006,22 @@
         "properties": {
           "street": {
             "type": "string",
-            "format": "address",
+            "format": "street",
             "example": "437 Lytton"
           },
           "city": {
             "type": "string",
+            "format": "city",
             "example": "Palo Alto"
           },
           "state": {
             "type": "string",
+            "format": "state",
             "example": "CA"
           },
           "zip": {
             "type": "string",
+            "format": "zipCode",
             "example": "94301"
           }
         },
@@ -1036,6 +1039,7 @@
           },
           "name": {
             "type": "string",
+            "format": "word",
             "example": "Dogs",
             "minLength": 4,
             "maxLength": 20
@@ -1058,21 +1062,21 @@
             "format": "userName",
             "minLength": 4,
             "maxLength": 20,
-            "example": "theUser",
+            "example": "theUser"
           },
           "firstName": {
             "type": "string",
             "format": "firstName",
-            "example": "John",
             "minLength": 4,
-            "maxLength": 20
+            "maxLength": 20,
+            "example": "John"
           },
           "lastName": {
             "type": "string",
-            "example": "James",
             "format": "lastName",
             "minLength": 4,
-            "maxLength": 20
+            "maxLength": 20,
+            "example": "James"
           },
           "email": {
             "type": "string",
@@ -1134,6 +1138,7 @@
           },
           "name": {
             "type": "string",
+            "format": "firstName",
             "example": "doggie",
             "minLength": 4,
             "maxLength": 20
